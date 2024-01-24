@@ -59,6 +59,56 @@ Seguindo a proposta de solução apresentada, para se alcançar a interoperabili
  - Google Cloud IoT: Oferece serviços para conectar e gerenciar dispositivos IoT na nuvem. Integração com outros serviços do Google Cloud. Suporte a segurança e monitoramento.
  - Eclipse IoT: Conjunto de projetos de código aberto para desenvolvimento IoT. Inclui ferramentas, frameworks e protocolos. Foco na interoperabilidade e padronização.
 
+# *Descrição metodológica* 
+
+Diante da problemática apresentada e da proposta de solução que busca a padronização na intercomunicação dos dispositivos IoT em uma Cidade Inteligente, realizou-se a comparação entre os frameworks supracitados para se observar quais seus pontos fortes e sua limitações, principalmente, em relação a interoperabilidade.
+
+## *Arduino e Raspberry Pi*
+
+- *Plataformas de Hardware:* Essas não são plataformas de software, mas placas de desenvolvimento de hardware. Elas podem alcançar interoperabilidade por meio de:
+- *Protocolos padrão:* Ambas suportam protocolos comuns de comunicação, como WiFi, Bluetooth e MQTT, permitindo a comunicação com outros dispositivos que utilizam os mesmos protocolos.
+- *Bibliotecas e Frameworks:* Bibliotecas de código aberto como ArduinoJSON e bibliotecas MQTT para Raspberry Pi facilitam a troca de dados com diversos dispositivos.
+- *Limitações:* Projetadas principalmente para o desenvolvimento de um único dispositivo, exigindo esforço adicional para cenários complexos de interoperabilidade.
+
+## *IoTivity*
+
+- *Framework de Código Aberto:* Foca na interoperabilidade de dispositivo para dispositivo.
+- *Modelo de Dados Padronizado:* Promove a descoberta de dispositivos e comunicação usando o protocolo CoAP leve e um modelo de dados comum, permitindo interação fácil entre dispositivos, independentemente do fornecedor ou plataforma.
+- *Adoção:* Ainda está ganhando popularidade, exigindo dispositivos e bibliotecas compatíveis para implementação.
+
+## *AWS IoT Core, Microsoft Azure IoT, Google Cloud IoT*
+
+- *Plataformas de IoT Baseadas na Nuvem:* Projetadas para gerenciar e conectar implantações de IoT em larga escala.
+- *APIs e Protocolos Proprietários:* Conectam principalmente a dispositivos dentro de seus ecossistemas respectivos, limitando a interoperabilidade nativa com outras plataformas.
+- *Soluções de Interoperabilidade:* Oferecem gateways e serviços de integração para conectar-se a dispositivos e plataformas externas, embora com aumento de complexidade e potencial bloqueio do fornecedor.
+
+## *Eclipse IoT*
+
+- *Ecossistema de Projetos de Código Aberto:* Fornece diversas ferramentas e frameworks para diversas necessidades de IoT, incluindo soluções de interoperabilidade como Eclipse Kura e Eclipse Leshan.
+- *Protocolos e APIs Padronizados:* Promove padrões e protocolos abertos como MQTT e LwM2M, facilitando a comunicação com diversas plataformas e dispositivos.
+- *Complexidade:* Requer escolher e integrar ferramentas adequadas do ecossistema Eclipse IoT, com diferentes níveis de suporte à interoperabilidade.
+
+# *Conclusão*
+
+Priorizando a interoperabilidade, e outras características essenciais para uma cidade inteligente como escalabilidade e flexibilidade, foram escolhidas as seguintes plataformas:
+
+## *Comunicação forte de dispositivo para dispositivo*
+IoTivity: Possibilita interação perfeita entre dispositivos diversos, independentemente do fornecedor ou plataforma, sendo ideal para redes de sensores e aplicações distribuídas.
+
+## *Gerenciamento baseado em nuvem e escalabilidade*
+Microsoft Azure IoT: Oferece capacidades robustas para implantações em larga escala, integra-se bem com os serviços da Microsoft e apresenta recursos de segurança sólidos.
+
+## *Flexibilidade e integração de código aberto*
+Eclipse IoT: Utiliza várias ferramentas como Kura e Leshan para interoperabilidade, suporta padrões abertos, permitindo a conexão com diferentes plataformas e ecossistemas.
+
+Com base nas necessidades é possível combinar diferentes opções:
+IoTivity + Azure IoT: Aproveita a comunicação de dispositivo para dispositivo para processamento na borda e conecta perfeitamente à nuvem para gerenciamento centralizado.
+
+Eclipse Kura + Google Cloud IoT: Utiliza o Eclipse Kura para interoperabilidade de código aberto e conecta-se ao Google Cloud IoT para monitoramento e análise em nuvem escaláveis.
+
+Node-RED + AWS IoT Core: Utiliza o fluxo visual do Node-RED para processamento flexível de dados e conecta-se ao AWS IoT Core para gerenciamento de dispositivos e serviços em nuvem dentro do ecossistema da AWS.
+
+Por fim, a chave é priorizar as necessidades e escolher plataformas que ofereçam o nível certo de interoperabilidade, escalabilidade e flexibilidade para a cidade inteligente.
 
 # *Referências:*
 [1] D. L. Dantas, L. V. L. Filgueiras, and A. A. F. Brandão, "Portability and interoperability in IoT Platforms application layer portabilidade e interoperabilidade na camada de aplicação de plataformas de internet das coisas," in Anais, 2019.
@@ -66,4 +116,6 @@ Seguindo a proposta de solução apresentada, para se alcançar a interoperabili
 [2] S. Andrade and D. Luque. "Interoperabilidade de Sistemas aplicados às Cidades Inteligentes: Um Estudo de Mapeamento Sistemático", in Anais do X Workshop de Computação Aplicada em Governo Eletrônico, Niterói, 2022, pp. 97-108, doi: https://doi.org/10.5753/wcge.2022.222970.
 
 [3] D. V. A. Silveira et al., "Proposta de padronização de comunicação para dispositivos IoT," in Congresso Brasileiro de Automática-CBA, vol. 1, no. 1, 2019, doi: https://doi.org/10.20906/CBA2022/511.
+
+[4] Microsoft, Arquitetura do Connected Customer Service com o Hub IoT: https://learn.microsoft.com/pt-br/dynamics365/customer-service/administer/cs-iot-connected-customer-service-architecture
 
