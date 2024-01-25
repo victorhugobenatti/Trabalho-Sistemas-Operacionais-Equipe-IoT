@@ -73,7 +73,7 @@ Diante da problemática apresentada e da proposta de solução que busca a padro
 ## *IoTivity*
 
 - *Framework de Código Aberto:* Foca na interoperabilidade de dispositivo para dispositivo.
-- *Modelo de Dados Padronizado:* Promove a descoberta de dispositivos e comunicação usando o protocolo CoAP leve e um modelo de dados comum, permitindo interação fácil entre dispositivos, independentemente do fornecedor ou plataforma.
+- *Modelo de Dados Padronizado:* Promove a descoberta de dispositivos e comunicação usando o protocolo CoAP leve e um modelo de dados comum, permitindo interação fácil entre dispositivos, independentemente do fornecedor ou plataforma [5].
 - *Adoção:* Ainda está ganhando popularidade, exigindo dispositivos e bibliotecas compatíveis para implementação.
 
 ## *AWS IoT Core, Microsoft Azure IoT, Google Cloud IoT*
@@ -84,8 +84,8 @@ Diante da problemática apresentada e da proposta de solução que busca a padro
 
 ## *Eclipse IoT*
 
-- *Ecossistema de Projetos de Código Aberto:* Fornece diversas ferramentas e frameworks para diversas necessidades de IoT, incluindo soluções de interoperabilidade como Eclipse Kura e Eclipse Leshan.
-- *Protocolos e APIs Padronizados:* Promove padrões e protocolos abertos como MQTT e LwM2M, facilitando a comunicação com diversas plataformas e dispositivos.
+- *Ecossistema de Projetos de Código Aberto:* Fornece diversas ferramentas e frameworks para diversas necessidades de IoT, incluindo soluções de interoperabilidade como Eclipse Kura [6] e Eclipse Leshan.
+- *Protocolos e APIs Padronizados:* Promove padrões e protocolos abertos como MQTT e LwM2M, facilitando a comunicação com diversas plataformas e dispositivos [7].
 - *Complexidade:* Requer escolher e integrar ferramentas adequadas do ecossistema Eclipse IoT, com diferentes níveis de suporte à interoperabilidade.
 
 # *Conclusão*
@@ -118,4 +118,10 @@ Por fim, a chave é priorizar as necessidades e escolher plataformas que ofereç
 [3] D. V. A. Silveira et al., "Proposta de padronização de comunicação para dispositivos IoT," in Congresso Brasileiro de Automática-CBA, vol. 1, no. 1, 2019, doi: https://doi.org/10.20906/CBA2022/511.
 
 [4] Microsoft, Arquitetura do Connected Customer Service com o Hub IoT: https://learn.microsoft.com/pt-br/dynamics365/customer-service/administer/cs-iot-connected-customer-service-architecture
+
+[5] Z. Shelby, K. Hartke, and C. Bormann, "The Constrained Application Protocol (CoAP)," RFC 7252, DOI 10.17487/RFC7252, Jun. 2014. [Online]. Available: https://www.rfc-editor.org/info/rfc7252.
+
+[6] Y. Li, "An integrated platform for the internet of things based on an open source ecosystem," Future Internet, vol. 10, no. 11, p. 105, 2018.
+
+[7] S. Rao et al., "Implementing LWM2M in constrained IoT devices," in 2015 IEEE Conference on Wireless Sensors (ICWiSe), IEEE, 2015, pp. 52-57.
 
